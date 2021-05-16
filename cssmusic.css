@@ -355,11 +355,7 @@ footer>div{
 footer:hover{
     cursor:pointer;
 }
-@media(min-width:600px) {
-    body{
-        background-color:white;
-    }
-}
+
 
 
 
