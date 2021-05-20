@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    
 }
 ol, ul {
 	list-style: none;
@@ -51,13 +52,16 @@ body{
     background-color: rgb(11, 4, 34);
     font-family: 'PT Sans Narrow', sans-serif;/*Setting the body font*/
     color:white;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
 }
 /*design of navigation bar starts*/
 .navigationBar
 {
-    height: 10vh;
+    height: 2vh;
     width:auto;
-    margin: 1px;
+    margin: 1vh;
     padding:3% 3%;
     display: flex;
     flex-direction: row;
@@ -80,14 +84,14 @@ body{
 /*The logo image that appears on the top left */
 .website-logo img
 {
-    height: 40px;
-    width: 40px;
+    height: 3em;
+    width: 3em;
 }
 /*Profile image that appears on top right*/
 .profile img
 {
-    height: 50px;
-    width: 50px;
+    height: 3em;
+    width: 3em;
     border-radius: 50%;
 }
 /*notification image that is between search  box and profile image*/
@@ -114,6 +118,7 @@ body{
     margin-left:10px;
     position: relative;
     border:none;
+    
 }
 /*controlling how input will be taken in the search box*/
 .searchbar input
@@ -146,11 +151,9 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items:flex-start;
+    align-items:center;
 
-    margin-top: 10px;
-    margin-right: 50px;
-    margin-bottom: 30px;
+    margin:2vh;
     padding:10px;
     width: 75vw;
     height: 10vh;
@@ -158,8 +161,8 @@ body{
 
 
 .mood img{
-    width: 60px;
-    height: 60px;
+    width: 5em;
+    height: 5em;
     border-radius: 35%;
     margin-bottom: 10px;
 }
@@ -187,8 +190,8 @@ body{
     margin-bottom: 30px;
     margin-left: 15px;
     padding:5px;
-    width: 75vw;
-    height: 12vh;
+    width: fit-content;
+    height: 7em;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -197,8 +200,8 @@ body{
     
 }
 .popularartist img{
-    width: 75px;
-    height: 75px;
+    width: 7em;
+    height: 7em;
     border-radius: 55%;/*circular image*/
     margin: 5px;
     margin-bottom: 10px;
@@ -243,14 +246,14 @@ h4{
     margin-top: 5px;
     margin-right: 50px;
     margin-bottom: 100px;
-    margin-left: 15px;
+    
     padding:5px;
-    width: 75vw;
-    height: 10vh;
+    width: fit-content;
+    height: 7em;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content:space-between;
+    justify-content:flex-start;
     align-items:flex-start;
     
 
@@ -304,7 +307,7 @@ footer{
 	box-sizing: border-box;
 	z-index: 6;
     margin-top: 0px;
-    
+    align-items: flex-start;
 }
 
 .song-image img
